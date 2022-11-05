@@ -1,7 +1,4 @@
-using Decoractor;
-using System.ComponentModel;
-
-namespace FactoryDecoractor
+namespace Decoractor.Test
 {
     public interface ITestCase
     {

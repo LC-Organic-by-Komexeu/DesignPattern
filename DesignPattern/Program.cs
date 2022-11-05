@@ -14,7 +14,9 @@
 // // factoryTest.Action(TestCaseEnum.DesignPattern3);
 // factoryTest.Action();
 
-Console.WriteLine("使用工廠模式+裝飾者模式Test");
-var forDecorator = new FactoryDecoractor.ForTestCase();
-FactoryDecoractor.ITestCase DecoractorTest =
-new FactoryDecoractor.DesignPattern3(new FactoryDecoractor.DecoractorTest(forDecorator, ConsoleColor.Cyan), ConsoleColor.DarkMagenta);
+Console.WriteLine("使用裝飾者模式Test");
+var forDecorator = new Decoractor.Test.ForTestCase();
+Decoractor.Test.ITestCase DecoractorTest =
+new Decoractor.Test.DesignPattern3(
+        new Decoractor.Test.DecoractorTest(forDecorator, ConsoleColor.Cyan)
+    , ConsoleColor.DarkMagenta);
